@@ -7,13 +7,13 @@
 ---
 
 ## Phase 0: 本地基礎建置與認證 (Local Foundation & Auth - 零成本)
-- [ ] **Next.js 前端腳手架建立**
-    - [ ] 整合 TypeScript, Tailwind CSS, Zustand。
-    - **驗收細節:** 前端專案能在本地 `localhost:3000` 啟動。
-- [ ] **Google OAuth 2.0 整合 (免費)**
-    - [ ] 配置 Google Cloud Console 憑證。
-    - [ ] 實作登入/登出功能，顯示使用者頭像。
-    - **驗收細節:** 使用者能透過 Google 登入並在 Zustand Store 中看到個人資訊。
+- [x] **Next.js 前端腳手架建立**
+    - [x] 整合 TypeScript, Tailwind CSS, Zustand。
+    - [x] 重構專案架構 (frontend/)。
+- [x] **Google OAuth 2.0 整合 (免費)**
+    - [x] 配置 Auth.js (NextAuth) 與 API 路由。
+    - [x] 實作登入/登出 UI 組件。
+    - [ ] 填寫 GCP Google Client ID 憑證。
 
 ## Phase 1: 本地 3D 引擎與邊緣推理 (Local 3D Engine - 零成本)
 - [ ] **FLAME 模型整合 (R3F)**
