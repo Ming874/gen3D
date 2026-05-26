@@ -3,15 +3,7 @@
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls, Stage } from "@react-three/drei"
 import { Suspense } from "react"
-
-function PlaceholderAvatar() {
-  return (
-    <mesh>
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color="orange" />
-    </mesh>
-  )
-}
+import FlameModel from "./FlameModel"
 
 export default function Scene() {
   return (
@@ -19,9 +11,10 @@ export default function Scene() {
       <Canvas shadows camera={{ position: [0, 0, 4], fov: 50 }}>
         <Suspense fallback={null}>
           <Stage intensity={0.5} environment="city" adjustCamera={false}>
-            <PlaceholderAvatar />
+            {/* Placeholder path for the FLAME model - in real dev, this would be a public/ asset */}
+            <FlameModel url="/models/flame_base.glb" />
           </Stage>
-          <OrbitControls makeDefault />
+          <OrbitControls makeDefault minPolarAngle={0} maxPolarAngle={Math.PI / 1.75} />
         </Suspense>
       </Canvas>
     </div>
