@@ -52,6 +52,7 @@ gcp.md
 
 # Gemini CLI (Privacy First)
 .gemini/
-! .gemini/skills/
 Gemini.md
 TODO.md
+AGENTS.md
+CLAUDE.md
